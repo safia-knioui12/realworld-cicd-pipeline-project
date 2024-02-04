@@ -58,7 +58,7 @@ pipeline {
                 sh """
                 mvn sonar:sonar \
                 -Dsonar.projectKey=cicd-pipeline-project \
-                -Dsonar.host.url=http://192.168.11.106:9000 \
+                -Dsonar.host.url=http://192.168.11.103:9000 \
                 -Dsonar.login=$SONAR_TOKEN
                 """
                 }
